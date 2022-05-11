@@ -1,12 +1,60 @@
 <!DOCTYPE html>
 <html lang="pt-br">
-  <head>
-    <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <title>React App</title>
-  </head>
-  <body>
-    <noscript>You need to enable JavaScript to run this app.</noscript>
-    <div class="root"></div>
-  </body>
+
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>ZapRecall</title>
+  <link rel="stylesheet" href="css/reset.css">
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Recursive:wght@300;400&family=Righteous&display=swap"
+    rel="stylesheet">
+</head>
+
+<body>
+  <div class="root">
+    <section class="startScreen hidden">
+      <img src="images/image 1.png" alt="logo em formato de raio">
+      <p>ZapRecall</p>
+      <button>Iniciar Recall!</button>
+    </section>
+
+    <section class="deckScreen">
+      <header>
+        <img src="images/image 1.png" alt="logo em formato de raio">
+        ZapRecall
+      </header>
+
+      <ul class="questions">
+        <button>
+          <span>Pergunta 1</span>
+          <ion-icon name="play-outline"></ion-icon>
+        </button>
+
+        <button>
+          <span>Pergunta 2</span>
+          <ion-icon name="play-outline"></ion-icon>
+        </button>
+        <button>
+          <span>Pergunta 3</span>
+          <ion-icon name="play-outline"></ion-icon>
+        </button>
+      </ul>
+
+      <footer>
+        <p> 0/8 CONCLUÍDOS </p>
+        <ion-icon class="green" name="checkmark-circle"></ion-icon>
+        <ion-icon class="red" name="close-circle-sharp"></ion-icon>
+        <ion-icon class="orange" name="help-circle-sharp"></ion-icon>
+      </footer>
+    </section>
+  </div>
+
+  <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+  <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+
+</body>
+
 </html>
