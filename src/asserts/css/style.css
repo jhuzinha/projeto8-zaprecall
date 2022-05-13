@@ -1,0 +1,24 @@
+* {
+    box-sizing: border-box;
+}
+
+.root {
+    width: 100%;
+}
+
+body {
+    background-color: #FB6B6B;
+    font-family: 'Righteous', cursive;
+    width: 100%;   
+}
+
+.green {
+    color:#2FBE34;
+}
+
+.orange {
+    color:#FF922E;
+}
+.red {
+    color:#FF3030;
+}

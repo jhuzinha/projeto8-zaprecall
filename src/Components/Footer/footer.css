@@ -1,0 +1,33 @@
+.footer {
+    font-family: 'Recursive', sans-serif;
+    width: 100%;
+    height: 70px;
+    background-color: #FFFFFF;
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    padding: 10px;
+    text-align: center;
+}
+
+.footer p {
+    margin-bottom: 6px;
+}
+
+.footer div {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+button ion-icon{
+    font-size: 23px;
+}
+
+.footer div ion-icon {
+    font-size: 23px;
+}
+
+.spacing {
+    margin-bottom: 80px;
+}
