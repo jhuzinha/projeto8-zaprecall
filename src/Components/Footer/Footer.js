@@ -27,10 +27,11 @@ export default function Footer({Allquestions, foot}) {
 
 
 function Mensagem({foot}){
+        const vazio = 0;
         let newFoot = foot.filter((elemento) => elemento.nome === 'close-circle-sharp')
-        if (foot.length === 8){{
+        if (foot.length === 8){
             return(
-            (newFoot.length) === 0 ?
+            (newFoot.length) === vazio ?
             <>
                 <p> <img src={Happy} alt="" /> Parabéns!</p>
                 <p> Você não esqueceu de nenhum flashcard! </p>
@@ -40,7 +41,7 @@ function Mensagem({foot}){
                 <p> <img src={Sad} alt="" /> Putz...</p>
                 <p> Ainda faltam alguns... Mas não desanime! </p>
             </>
-        )}
+        )
         }
         return (
             <p> </p>

@@ -32,3 +32,14 @@
     min-width: 246px;
     min-height: 54px;
 }
+
+.startScreen input {
+    height: 43px;
+    width: 20%;
+    min-width: 246px;
+    margin-bottom:  10px;
+    padding: 10px;
+    background: #FFFFFF;
+    border-radius: 5px;
+    border: none;
+}
