@@ -14,11 +14,15 @@ body {
 
 .green {
     color:#2FBE34;
+    text-decoration: line-through;
 }
 
 .orange {
     color:#FF922E;
+    text-decoration: line-through;
 }
+
 .red {
     color:#FF3030;
+    text-decoration: line-through;
 }

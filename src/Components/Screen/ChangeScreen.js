@@ -8,10 +8,11 @@ export default function ChangeScreen() {
     return (
         <> 
         {
-            !screen ?     
+            !screen?     
             <StartScreen screen={screen} setScreen={() => setScreen(true)}/> : 
             <DeckScreen /> 
         }
         </>
     )
 }
+

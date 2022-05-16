@@ -1,29 +1,11 @@
 import Logo from "../../asserts/images/logo.png"
+import React from "react"
 import Footer from "../Footer/Footer"
 import Card from "../Card/Card"
 import "./deckScreen.css"
 
 export default function DeckScreen() {
-    return (
-        <section className="deckScreen">
-            <Header />
-            <CreateQuestions />
-            <Footer />
-        </section>
-    )
-}
-
-function Header() {
-    return (
-        <header>
-            <img src={Logo} alt="logo em formato de raio" />
-            ZapRecall
-        </header>
-    )
-}
-
-
-function CreateQuestions() {
+    const [foot, setFoot] = React.useState([])
     const Allquestions = [
         {
             statement: "O que é JSX?",
@@ -58,13 +40,37 @@ function CreateQuestions() {
             answer: "dizer para o React quais informações quando atualizadas devem renderizar a tela novamente",
         }
     ]
-    console.log(Allquestions)
+    return (
+        <section className="deckScreen">
+            <Header />
+            <CreateQuestions Allquestions= {Allquestions} foot={foot} setFoot = {setFoot}/>
+            <Footer Allquestions = {Allquestions} foot={foot} setFoot = {setFoot}/>
+        </section>
+    )
+}
+
+function Header() {
+    return (
+        <header>
+            <img src={Logo} alt="logo em formato de raio" />
+            ZapRecall
+        </header>
+    )
+}
+
+
+function CreateQuestions({Allquestions, foot, setFoot}) {
     return (
         <ul className="questions">
             {Allquestions.map((question, index) =>
-                <Card question={question.statement} answer={question.answer} index={index} key={index}/>
+                <Card question={question.statement} answer={question.answer} index={index} key={index} foot={foot} setFoot = {setFoot}/>
             )}
         </ul>
     )
 
+}
+
+
+function random() { 
+	return Math.random() -0.5; 
 }

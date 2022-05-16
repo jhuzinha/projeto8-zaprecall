@@ -12,6 +12,7 @@
     margin: 0 35px 25px 35px;
     padding: 18px 0 0 15px;
     position: relative;
+    word-wrap: break-word;
 }
 
 .card ion-icon {
@@ -25,3 +26,48 @@
 .card ion-icon:hover {
     color:rgba(48, 43, 43, 0.15)
 }
+
+.card > div:nth-child(2) {
+    display: flex;
+    justify-content: space-evenly;
+    position: absolute;
+    width: 100%;
+    bottom: 0;
+    text-align: center;
+    padding: 20px;
+}
+
+
+.userAnswer {
+    min-width: 70px;
+    height: 37.17px;
+    width: 20%;
+    padding: 25px;
+    margin-right: 10%;
+    border-radius: 5px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 14px;
+    color: white;
+    word-wrap: break-word;
+}
+
+.vermelho{
+    background-color: #FF3030;
+}
+
+.laranja {
+    background-color: #FF922E;
+}
+
+.verde {
+    background-color: #2FBE34;
+}
+
+.texto {
+    margin-bottom: 30%;
+}
+
