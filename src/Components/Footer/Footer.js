@@ -12,13 +12,14 @@ export default function Footer({Allquestions, foot}) {
          
             <Mensagem foot={foot}/>
             <p> {foot.length}/{Allquestions.length} </p> 
-            
+    
             <div>
                 {
                     foot.map( (icon, index) => <div key={index} className={icon.cor}><ion-icon name={icon.nome}></ion-icon></div>
                     )
                 }
             </div>
+
         </div>
         </>
     )
