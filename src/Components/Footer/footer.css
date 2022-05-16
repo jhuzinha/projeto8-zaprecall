@@ -32,3 +32,8 @@ button ion-icon{
 .spacing {
     margin-bottom: 80px;
 }
+
+.footer p img {
+    height: 23px;
+    width: 23px;
+}

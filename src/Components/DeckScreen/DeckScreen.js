@@ -6,7 +6,7 @@ import "./deckScreen.css"
 
 export default function DeckScreen() {
     const [foot, setFoot] = React.useState([])
-    const Allquestions = [
+    const Allthequestions = [
         {
             statement: "O que é JSX?",
             answer: "uma extensão de linguagem do JavaScript",
@@ -40,6 +40,8 @@ export default function DeckScreen() {
             answer: "dizer para o React quais informações quando atualizadas devem renderizar a tela novamente",
         }
     ]
+    const Allquestions = Allthequestions.sort(random)
+
     return (
         <section className="deckScreen">
             <Header />

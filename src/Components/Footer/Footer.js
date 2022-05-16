@@ -1,5 +1,6 @@
 import "./footer.css"
-
+import Sad from "../../asserts/images/sad.png";
+import Happy from "../../asserts/images/party.png";
 import React from "react";
 
 export default function Footer({Allquestions, foot}) {
@@ -30,12 +31,12 @@ function Mensagem({foot}){
             return(
             (newFoot.length) === 0 ?
             <>
-                <p> Parabéns!</p>
+                <p> <img src={Happy} alt="" /> Parabéns!</p>
                 <p> Você não esqueceu de nenhum flashcard! </p>
             </>
             :
             <>
-                <p> Putz...</p>
+                <p> <img src={Sad} alt="" /> Putz...</p>
                 <p> Ainda faltam alguns... Mas não desanime! </p>
             </>
         )}
