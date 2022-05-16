@@ -39,11 +39,11 @@
 
 
 .userAnswer {
-    min-width: 70px;
-    height: 37.17px;
-    width: 20%;
-    padding: 25px;
-    margin-right: 10%;
+    min-width: 74px;
+    height: 44.17px;
+    width: 25%;
+    padding: 2px;
+    margin-right: 5%;
     border-radius: 5px;
     display: flex;
     justify-content: center;
@@ -65,6 +65,7 @@
 
 .verde {
     background-color: #2FBE34;
+    margin-right: 27px;
 }
 
 .texto {
